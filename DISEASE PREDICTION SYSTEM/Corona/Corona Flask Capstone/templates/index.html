@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>ML API</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!--===============================================================================================-->
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="{{ url_for('static', filename='styles/main.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='styles/util.css') }}">
+	<!--===============================================================================================-->
+	<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</head>
+
+<body>
+
+	<div class="bg-contact2" style="background-image: url('../static/img.png');">
+		<div class="container-contact2">
+			<div class="wrap-contact2">
+				<form class="contact2-form validate-form" action="{{ url_for('predict')}}" method="post">
+					<span class="contact2-form-title">
+						Coronavirus Probability Predictor!
+					</span>
+					<div class="wrap-input2 validate-input">
+						<input class="input2" type="text" name="age_60_and_above" required="required" placeholder="Age Above 60" />
+						<span class="focus-input2"></span>
+					</div>
+					<div class="wrap-input2 validate-input">
+						<input class="input2" type="text" name="Abroad" required="required" placeholder="Abroad" />
+						<span class="focus-input2"></span>
+					</div>
+					<div class="wrap-input2 validate-input">
+						<input class="input2" type="text" name="cough" required="required" placeholder="Cough" />
+						<span class="focus-input2"></span>
+					</div>
+					<div class="wrap-input2 validate-input">
+						<input class="input2" ttype="text" name="fever" required="required" placeholder="Fever" />
+						<span class="focus-input2"></span>
+					</div>
+					<div class="wrap-input2 validate-input">
+						<input class="input2" type="text" name="sore_throat" required="required"
+							placeholder="Sore Throat" />
+						<span class="focus-input2"></span>
+					</div>
+					<div class="wrap-input2 validate-input">
+						<input class="input2" type="text" name="shortness_of_breath" required="required"
+							placeholder="Shortness of Breath" />
+						<span class="focus-input2"></span>
+					</div>
+					<div class="wrap-input2 validate-input">
+						<input class="input2" type="text" name="head_ache" required="required"
+							placeholder="Head Ache" />
+						<span class="focus-input2"></span>
+					</div>
+					<div class="wrap-input2 validate-input">
+						<input class="input2" type="text" name="Contact with confirmed" required="required"
+							placeholder="Contact with confirmed" />
+						<span class="focus-input2"></span>
+					</div>
+
+					<div class="container-contact2-form-btn">
+						<div class="wrap-contact2-form-btn">
+							<div class="contact2-form-bgbtn"></div>
+							<button class="contact2-form-btn" type="submit">
+								Predict
+							</button>
+						</div>
+					</div>
+				</form>
+				<br>
+				<br>
+				<p class="predict">{{ pred }}</p>
+				<p class="predict"style="">{{inf}}</p>
+			</div>
+		</div>
+	</div>
+
+
+
+</body>
+
+</html>

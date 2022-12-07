@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway');
+body {
+    font-family: 'Raleway', sans-serif;
+    padding-bottom: 50px;
+    background-color: #85F4FF; background-image: linear-gradient(90deg, #42C2FF 0%, #B8FFF9 100%);
+    height: 100%;
+
+}
+
+tr:hover td { background:#EDEDED; }
+
+.form-check-input:hover {
+    -moz-box-shadow:    3px 3px 5px 2px #ccc;
+    -webkit-box-shadow: 3px 3px 5px 2px #ccc;
+    box-shadow:         3px 3px 5px 2px #ccc;
+}
+
+
+
+.form-check-label {
+    text-align: center;
+}
+
+.form-control mr-sm-2 {
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+  }
+h1{
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    color: #0E185F;
+    margin-top: 4.5%;
+    font-size: 60px;
+    /* width: 45%;
+    margin-left: 27.5%; */
+    
+}
+.intro-box{
+    text-align: center;
+}
+.btn{
+    margin: 2%;
+    height: 400px;
+    width: 500px;
+    align-content: center;
+    font-size: 150px ;
+    border-radius:50% ;
+
+}
